@@ -7,7 +7,7 @@ int ways(int i, int j, int n)
 {
 	if (i < 0 || i >= 30 || j < 0 || j >= 30) 
 	{
-		return 0;
+		return -1;
 	}
 	if(n == 0)
 	    return 1;
