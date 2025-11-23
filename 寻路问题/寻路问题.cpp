@@ -8,6 +8,7 @@ struct Road
 {
 	int d,l,t;
 };
+int minL[100][10010];
 vector< vector <Road> > G(130);
 int visited[130];
 
@@ -45,6 +46,13 @@ int main()
 		if(s != r.d)
 		{
 			G[s].push_back(r);
+		}
+	}
+	for(int i = 0; i < 100; ++i)
+	{
+		for(int j = 0; j < 10010; ++j)
+		{
+			minL[i][j] = 1 << 30;
 		}
 	}
 	minLen = 1 << 30;
