@@ -55,6 +55,7 @@ int main()
 			minL[i][j] = 1 << 30;
 		}
 	}
+	memset(visited, 0, sizeof(visited));
 	minLen = 1 << 30;
 	totalLen = 0;
 	totalCost = 0;
